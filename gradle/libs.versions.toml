@@ -1,0 +1,132 @@
+[versions]
+agp = "8.3.1"
+kotlin = "1.9.23"
+core-ktx = "1.12.0"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+lifecycle-runtime-ktx = "2.7.0"
+lifecycle-runtime-compose = "2.7.0"
+compose-bom = "2024.04.00"
+androidx-compose-compiler = "1.5.11"
+activity-compose = "1.8.2"
+appcompat = "1.6.1"
+material = "1.11.0"
+io-insert-koin = "3.5.4"
+io-insert-koin-androidx-compose = "3.5.4"
+io-insert-koin-annotations = "1.3.1"
+kotlinGradlePlugin = "1.9.23"
+com-google-devtools-ksp = "1.9.23-1.0.20"
+android-compile-sdk = "34"
+android-min-sdk = "29"
+android-target-sdk = "34"
+jvm-target = "17"
+io-gitlab-arturbosch-detekt = "1.23.6"
+com-squareup-retrofit = "2.11.0"
+com-squareup-moshi = "1.15.1"
+com-squareup-okhttp3 = "4.12.0"
+androidx-room = "2.6.1"
+io-kotest = "5.8.1"
+com-jakewharton-timber = "5.0.1"
+androidx-test = "1.5.0"
+androidx-test-runner = "1.5.2"
+androidx-test-orchestrator = "1.4.2"
+androidx-navigation-compose = "2.7.7"
+
+[libraries]
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "androidx-navigation-compose" }
+androidx-test-orchestrator = { module = "androidx.test:orchestrator", version.ref = "androidx-test-orchestrator" }
+org-jetbrains-kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePlugin" }
+com-android-tools-build-gradle = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
+junit = { module = "junit:junit", version.ref = "junit" }
+androidx-test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "androidx-test-ext-junit" }
+androidx-test-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso-core" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "compose-bom" }
+androidx-compose-ui = { module = "androidx.compose.ui:ui" }
+androidx-compose-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+androidx-compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
+androidx-compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
+androidx-compose-material3 = { module = "androidx.compose.material3:material3" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle-runtime-compose" }
+androidx-material = { module = "com.google.android.material:material", version.ref = "material" }
+io-insert-koin-android = { module = "io.insert-koin:koin-android", version.ref = "io-insert-koin" }
+io-insert-koin-annotations = { module = "io.insert-koin:koin-annotations", version.ref = "io-insert-koin-annotations" }
+io-insert-koin-ksp-compiler = { module = "io.insert-koin:koin-ksp-compiler", version.ref = "io-insert-koin-annotations" }
+io-insert-koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "io-insert-koin" }
+io-insert-koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "io-insert-koin-androidx-compose" }
+io-insert-koin-test = { module = "io.insert-koin:koin-test", version.ref = "io-insert-koin" }
+io-insert-koin-test-junit4 = { module = "io.insert-koin:koin-test-junit4", version.ref = "io-insert-koin" }
+io-gitlab-arturbosch-detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "io-gitlab-arturbosch-detekt" }
+com-squareup-okhttp3-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "com-squareup-okhttp3" }
+com-squareup-okhttp3-mockwebserver = { module = "com.squareup.okhttp3:mockwebserver", version.ref = "com-squareup-okhttp3" }
+com-squareup-okhttp3-okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "com-squareup-okhttp3" }
+com-squareup-retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "com-squareup-retrofit" }
+com-squareup-retrofit-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "com-squareup-retrofit" }
+com-squareup-moshi = { module = "com.squareup.moshi:moshi", version.ref = "com-squareup-moshi" }
+com-squareup-moshi-adapters = { module = "com.squareup.moshi:moshi-adapters", version.ref = "com-squareup-moshi" }
+com-squareup-moshi-kotlin-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", version.ref = "com-squareup-moshi" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "androidx-room" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "androidx-room" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "androidx-room" }
+androidx-room-testing = { module = "androidx.room:room-testing", version.ref = "androidx-room" }
+io-kotest-runner-junit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "io-kotest" }
+io-kotest-assertions-core = { module = "io.kotest:kotest-assertions-core", version.ref = "io-kotest" }
+io-kotest-property = { module = "io.kotest:kotest-property", version.ref = "io-kotest" }
+com-jakewharton-timber = { module = "com.jakewharton.timber:timber", version.ref = "com-jakewharton-timber" }
+androidx-test-core = { module = "androidx.test:core", version.ref = "androidx-test" }
+androidx-test-rules = { module = "androidx.test:rules", version.ref = "androidx-test" }
+androidx-test-runner = { module = "androidx.test:runner", version.ref = "androidx-test-runner" }
+
+[bundles]
+compose = [
+    "androidx-compose-ui",
+    "androidx-compose-ui-graphics",
+    "androidx-compose-ui-tooling-preview",
+    "androidx-navigation-compose",
+    "androidx-lifecycle-runtime-compose",
+]
+compose-testing = [
+    "androidx-compose-ui-test-manifest",
+    "androidx-compose-ui-test-junit4",
+]
+retrofit = [
+    "com-squareup-retrofit",
+    "com-squareup-retrofit-moshi",
+]
+moshi = [
+    "com-squareup-moshi",
+    "com-squareup-moshi-adapters",
+]
+room = [
+    "androidx-room-runtime",
+    "androidx-room-ktx",
+]
+kotest = [
+    "io-kotest-runner-junit5",
+    "io-kotest-assertions-core",
+    "io-kotest-property",
+]
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+com-google-devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "com-google-devtools-ksp" }
+io-gitlab-arturbosch-detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "io-gitlab-arturbosch-detekt" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+
+# Plugins defined in this project
+project-application = { id = "com.stewemetal.takehometemplate.android.application", version = "undefined" }
+project-application-compose = { id = "com.stewemetal.takehometemplate.android.application.compose", version = "undefined" }
+project-application-koin-annotation = { id = "com.stewemetal.takehometemplate.android.application.koin.annotations", version = "undefined" }
+project-feature = { id = "com.stewemetal.takehometemplate.android.feature", version = "undefined" }
+project-library = { id = "com.stewemetal.takehometemplate.android.library", version = "undefined" }
+project-library-base = { id = "com.stewemetal.takehometemplate.android.base.library", version = "undefined" }
+project-library-compose = { id = "com.stewemetal.takehometemplate.android.library.compose", version = "undefined" }
+project-library-koin-annotation = { id = "com.stewemetal.takehometemplate.android.library.koin.annotations", version = "undefined" }
+
