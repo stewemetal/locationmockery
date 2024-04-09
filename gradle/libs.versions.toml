@@ -32,6 +32,7 @@ androidx-test = "1.5.0"
 androidx-test-runner = "1.5.2"
 androidx-test-orchestrator = "1.4.2"
 androidx-navigation-compose = "2.7.7"
+mapbox = "11.3.0-rc.1"
 
 [libraries]
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "androidx-navigation-compose" }
@@ -82,6 +83,8 @@ com-jakewharton-timber = { module = "com.jakewharton.timber:timber", version.ref
 androidx-test-core = { module = "androidx.test:core", version.ref = "androidx-test" }
 androidx-test-rules = { module = "androidx.test:rules", version.ref = "androidx-test" }
 androidx-test-runner = { module = "androidx.test:runner", version.ref = "androidx-test-runner" }
+mapbox = { module = "com.mapbox.maps:android", version.ref = "mapbox" }
+mapbox-compose = { module = "com.mapbox.extension:maps-compose", version.ref = "mapbox" }
 
 [bundles]
 compose = [
@@ -111,6 +114,10 @@ kotest = [
     "io-kotest-runner-junit5",
     "io-kotest-assertions-core",
     "io-kotest-property",
+]
+mapbox = [
+    "mapbox",
+    "mapbox-compose",
 ]
 
 [plugins]

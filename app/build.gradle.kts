@@ -44,6 +44,8 @@ dependencies {
     implementation(project(":feature:item-list:impl"))
     implementation(project(":feature:item-details:contract"))
     implementation(project(":feature:item-details:impl"))
+    implementation(project(":feature:map:contract"))
+    implementation(project(":feature:map:impl"))
 
     implementation(project(":library:design"))
 
