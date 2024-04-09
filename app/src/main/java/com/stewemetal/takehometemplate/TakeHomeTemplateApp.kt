@@ -9,10 +9,9 @@ import androidx.navigation.compose.rememberNavController
 import com.stewemetal.takehometemplate.itemdetails.contract.ItemDetailsNavGraphFactory
 import com.stewemetal.takehometemplate.itemdetails.contract.navigateToItemDetails
 import com.stewemetal.takehometemplate.itemlist.contract.ItemListNavGraphFactory
-import com.stewemetal.takehometemplate.itemlist.contract.ItemListRoute
-import com.stewemetal.takehometemplate.itemlist.contract.navigateToHome
 import com.stewemetal.takehometemplate.login.contract.LoginNavGraphFactory
-import com.stewemetal.takehometemplate.login.contract.LoginRoute
+import com.stewemetal.takehometemplate.login.contract.MapNavGraphFactory
+import com.stewemetal.takehometemplate.login.contract.MapRoute
 import com.stewemetal.takehometemplate.shell.navigation.compose.TakeHomeTemplateNavHost
 import org.koin.compose.koinInject
 
@@ -22,6 +21,7 @@ fun TakeHomeTemplateApp(
     loginNavGraphFactory: LoginNavGraphFactory = koinInject(),
     itemListNavGraphFactory: ItemListNavGraphFactory = koinInject(),
     itemDetailsNavGraphFactory: ItemDetailsNavGraphFactory = koinInject(),
+    mapNavGraphFactory: MapNavGraphFactory = koinInject(),
 ) {
     fun NavBackStackEntry.lifecycleIsResumed(): Boolean =
         this.lifecycle.currentState == Lifecycle.State.RESUMED
@@ -38,21 +38,11 @@ fun TakeHomeTemplateApp(
     val navController = rememberNavController()
     TakeHomeTemplateNavHost(
         navController = navController,
-        startDestination = LoginRoute,
+        startDestination = MapRoute,
         modifier = modifier,
     ) {
-        loginNavGraphFactory.buildNavGraph(
+        mapNavGraphFactory.buildNavGraph(
             navGraphBuilder = this,
-            onNavigateToHomeScreen = {
-                navController.debouncedNavigation {
-                    navigateToHome {
-                        popUpTo(navController.graph.startDestinationId) {
-                            inclusive = true
-                        }
-                    }
-                    graph.setStartDestination(ItemListRoute)
-                }
-            },
         )
 
         itemListNavGraphFactory.buildNavGraph(

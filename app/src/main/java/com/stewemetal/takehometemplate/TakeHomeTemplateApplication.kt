@@ -4,6 +4,7 @@ import android.app.Application
 import com.stewemetal.takehometemplate.itemdetails.ItemDetailsModule
 import com.stewemetal.takehometemplate.itemlist.ItemListModule
 import com.stewemetal.takehometemplate.login.LoginModule
+import com.stewemetal.takehometemplate.map.MapModule
 import com.stewemetal.takehometemplate.shell.ShellModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
@@ -27,6 +28,7 @@ class TakeHomeTemplateApplication : Application() {
                 LoginModule().module,
                 ItemListModule().module,
                 ItemDetailsModule().module,
+                MapModule().module,
             )
         }
     }
